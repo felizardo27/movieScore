@@ -9,7 +9,7 @@ const Form = (props) => {
     const [title, setTitle] = useState('')
     const [score, setScore] = useState('')
     const [image, setImage] = useState('')
-    const [genre, setGenre] = useState('')
+    const [genres, setGenres] = useState('')
 
     const submit = (e) => {
         e.preventDefault()
@@ -18,12 +18,12 @@ const Form = (props) => {
             title,
             score,
             image,
-            genre
+            genres
         })
         setTitle('')
         setScore('')
         setImage('')
-        setGenre('')
+        setGenres('')
     }
     return(
         <section className='form'>
@@ -53,11 +53,11 @@ const Form = (props) => {
                     onChange={value => setImage(value)}
                 />
                 <DropDown 
-                    label={'Genre'}
+                    label={'Genres'}
                     required={true}
-                    onChange={value => setGenre(value)}
-                    itens={props.genre}
-                    value={genre}
+                    onChange={value => setGenres(value)}
+                    itens={props.genres}
+                    value={genres}
                 />
                 <Button>Create Card</Button>
             </form>
