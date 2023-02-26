@@ -4,10 +4,24 @@ import Form from './components/Form'
 
 const App = () => {
 
+  const genre = [
+    'Action',
+    'Adventure ',
+    'Comedy',
+    'Drama',
+    'Horror',
+    'Romance',
+    'Science Fiction',
+    'Thriller',
+    'Fantasy'
+]
+
   return (
     <div>
       <Banner />
-      <Form />
+      <Form 
+        genre={genre}
+      />
     </div>
   )
 }

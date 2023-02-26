@@ -3,19 +3,7 @@ import DropDown from '../DropDown'
 import Input from '../Input'
 import './Form.css'
 
-const Form = () => {
-
-    const genre = [
-        'Action',
-        'Adventure ',
-        'Comedy',
-        'Drama',
-        'Horror',
-        'Romance',
-        'Science Fiction',
-        'Thriller',
-        'Fantasy'
-    ]
+const Form = (props) => {
 
     return(
         <section className='form'>
@@ -41,8 +29,8 @@ const Form = () => {
                 <DropDown 
                     label={'Genre'}
                     required={true}
-                    itens={genre}
-                    value={genre}
+                    itens={props.genre}
+                    value={props.genre}
                 />
                 <Button>Create Card</Button>
             </form>
