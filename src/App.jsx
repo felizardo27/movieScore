@@ -2,12 +2,14 @@ import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner'
 import Form from './components/Form'
+import Genres from './components/genres'
+
 
 const App = () => {
 
-  const genre = [
+  const genres = [
     'Action',
-    'Adventure ',
+    'Adventure',
     'Comedy',
     'Drama',
     'Horror',
@@ -27,9 +29,16 @@ const App = () => {
     <div>
       <Banner />
       <Form 
-        genre={genre}
+        genres={genres}
         movie={movie => newMovie(movie)}
       />
+      {genres.map((genre) => (
+        <Genres 
+          key={genre}
+          name={genre}
+          movies={movies.filter(movie => movie.genres === genre)}
+        />
+      ))}
     </div>
   )
 }
