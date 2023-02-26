@@ -1,0 +1,26 @@
+.form {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.form form {
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.08);
+    max-width: 80%;
+    padding: 36px 64px;
+}
+
+.form form h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.form form {
+    max-width: 80%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 36px 64px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+}
