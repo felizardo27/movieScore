@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner'
 import Form from './components/Form'
-import Genres from './components/genres'
+import Genres from './components/Genres'
 import Footer from './components/Footer'
 
 
