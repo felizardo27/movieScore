@@ -3,6 +3,7 @@ import './App.css'
 import Banner from './components/Banner'
 import Form from './components/Form'
 import Genres from './components/genres'
+import Footer from './components/Footer'
 
 
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
           movies={movies.filter(movie => movie.genres === genre)}
         />
       ))}
+      <Footer />
     </div>
   )
 }
