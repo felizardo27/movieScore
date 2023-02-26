@@ -14,10 +14,16 @@ const Form = (props) => {
     const submit = (e) => {
         e.preventDefault()
 
-        console.log(title)
-        console.log(score)
-        console.log(image)
-        console.log(genre)
+        props.movie({
+            title,
+            score,
+            image,
+            genre
+        })
+        setTitle('')
+        setScore('')
+        setImage('')
+        setGenre('')
     }
     return(
         <section className='form'>
